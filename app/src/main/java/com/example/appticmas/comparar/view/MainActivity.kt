@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
             val sonIguales = mainViewModel.comparar(string1, string2)
 
-            val resultado = if (sonIguales) "Los strings son iguales" else "Los strings son diferentes"
+            val resultado = if (sonIguales) "Son iguales" else "Son diferentes"
             binding.resultTxtView.text = resultado
         }
 }

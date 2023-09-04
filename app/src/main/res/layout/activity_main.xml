@@ -4,63 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".comparar.view.MainActivity">
+
+    <TextView
+        android:id="@+id/tituloTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TICMAS"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inputFirstText"/>
+
 
     <TextView
         android:id="@+id/resultTxtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
+        app:layout_constraintTop_toBottomOf="@id/inputSecondText" />
 
     <EditText
         android:id="@+id/inputFirstText"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginBottom="19dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Escribir"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="36dp"
         android:inputType="text"
-        android:textColorHint="#8D6E63"
-        app:layout_constraintBottom_toTopOf="@+id/compararButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:hint="Escribir..."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloTxtView"
+        app:layout_constraintBottom_toTopOf="@id/compararButton"
+        app:layout_constraintWidth_max="488dp"
+         />
 
     <EditText
         android:id="@+id/inputSecondText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Escribir"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
         android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:hint="Escribir..."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/compararButton"
-        app:layout_constraintVertical_bias="0.082"
-        tools:ignore="TextSizeCheck" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/compararButton"
+        app:layout_constraintBottom_toTopOf="@id/resultTxtView"
+        app:layout_constraintWidth_max="488dp" />
 
     <ImageButton
         android:id="@+id/compararButton"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="Comparar"
+        android:src="@drawable/icons8_search_96___"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inputSecondText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icons8_search_96___"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintTop_toBottomOf="@id/inputFirstText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/icons8_search_96___" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
