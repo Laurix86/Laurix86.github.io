@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 class MainViewModel : ViewModel() {
 
 
-    fun comparar(word1: String, word2: String){
-        
+    fun comparar(word1: String, word2: String): Boolean{
+        return word1 == word2
     }
 }
