@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AppTicmas"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".comparar.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
