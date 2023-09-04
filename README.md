@@ -21,3 +21,6 @@ Usar un repositorio de GitHub pages haciendo la entrega del link.
 En caso de tener alguna duda o tengas algún problema con la subida, te dejamos aquí un video instructivo extra que te ayudará paso a paso con GitHub Pages: 
 
 En el último modulo del curso, encontrarás el apartado "Proyecto Final" con las etapas para poder realizarlo, recomendaciones, guías y condiciones para la entrega. ¡Te recomendamos que no dejes de consultarlo!
+
+
+LINK: https://github.com/Laurix86/Laurix86.github.io
